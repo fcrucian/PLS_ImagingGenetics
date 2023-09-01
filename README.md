@@ -25,9 +25,25 @@ Errors may arise while using this code if your python environment does not conta
 ### Imaging
 The [`preprocessing/imaging`](https://github.com/ggbioing/mcvae/tree/master/examples/mcvae) contains the necessary file to reproduce the ADNI T1-weighted images preprocessing from data cleaning to region-based thickness and volume feature extraction.
 
+<img src="./images/workflow_T1.png">
+
 The tools needed for this step are:
 * FSL version 6.0
 * FreeSurfer version 7.0 
 * Ants
+
+
+### Genetics
+TODO
+<img src="./images/workflow_gen.png">
+
+## PLS modeling
+TODO
+
+## PLS explainability and validation
+
+TODO
+
+
 
 
