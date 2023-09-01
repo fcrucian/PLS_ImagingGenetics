@@ -1,8 +1,10 @@
 # PLS_ImagingGenetics
 Public Repository for the paper 'Identifying the joint signature of brain atrophy and gene variant scores in Alzheimer's Disease' to appear in the Journal of Biomedical Informatics
 
-<img src="./images/Pipeline.png">
-
+<p align="center">
+<img src="./images/Pipeline.png" width="748">
+</p>
+  
 This repository contains the code related to two papers.
 
 If you use this work, please cite:
@@ -25,7 +27,9 @@ Errors may arise while using this code if your python environment does not conta
 ### Imaging
 The [`preprocessing/imaging`](https://github.com/ggbioing/mcvae/tree/master/examples/mcvae) contains the necessary file to reproduce the ADNI T1-weighted images preprocessing from data cleaning to region-based thickness and volume feature extraction.
 
-<img src="./images/workflow_T1.png">
+<p align="center">
+<img src="./images/workflow_T1.png" width="448">
+</p>
 
 The tools needed for this step are:
 * FSL version 6.0
@@ -35,7 +39,10 @@ The tools needed for this step are:
 
 ### Genetics
 TODO
-<img src="./images/workflow_gen.png">
+
+<p align="center">
+<img src="./images/workflow_gen.png" width="648">
+</p>
 
 ## PLS modeling
 TODO
