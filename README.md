@@ -5,8 +5,6 @@ Public Repository for the paper 'Identifying the joint signature of brain atroph
 <img src="./images/Pipeline.png" width="748">
 </p>
   
-This repository contains the code related to two papers.
-
 If you use this work, please cite:
 
 *Identifying the joint signature of brain atrophy and gene variant scores in Alzheimer's Disease*
