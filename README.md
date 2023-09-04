@@ -32,14 +32,14 @@ The [`preprocessing/imaging`](https://github.com/fcrucian/PLS_ImagingGenetics/tr
 </p>
 
 The tools needed for this step are:
-* FSL version 6.0 [link](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki)
-* FreeSurfer version 7.0 [link](https://surfer.nmr.mgh.harvard.edu/)
+* FSL version 6.0 [[link]](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki)
+* FreeSurfer version 7.0 [[link]](https://surfer.nmr.mgh.harvard.edu/)
 
 To run the code:
 TODO
 
 
-N.B. Edits to the file names and paths could be needed according to your local arrangement.
+N.B. Edits to the file names and paths could be needed according to your local file organization.
 
 ### Genetics
 TODO
