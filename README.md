@@ -19,23 +19,27 @@ BibTeX citation: [To appear]
 ```bibtex
 ```
 
-# Installation
+# Usage
 
-Errors may arise while using this code if your python environment does not contain the dependencies listed in the [`environment.yml`](./environment.yml) file. 
+The data analysis and the directory is divided into input data processing and PLS modeling.  
 
-## Data preprocessing
+## Data processing
 ### Imaging
-The [`preprocessing/imaging`](https://github.com/ggbioing/mcvae/tree/master/examples/mcvae) contains the necessary file to reproduce the ADNI T1-weighted images preprocessing from data cleaning to region-based thickness and volume feature extraction.
+The [`preprocessing/imaging`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/preprocessing) contains the necessary file to reproduce the ADNI T1-weighted images preprocessing from data cleaning to region-based thickness and volume feature extraction.
 
 <p align="center">
 <img src="./images/workflow_T1.png" width="448">
 </p>
 
 The tools needed for this step are:
-* FSL version 6.0
-* FreeSurfer version 7.0 
-* Ants
+* FSL version 6.0 [link](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki)
+* FreeSurfer version 7.0 [link](https://surfer.nmr.mgh.harvard.edu/)
 
+To run the code:
+TODO
+
+
+N.B. Edits to the file names and paths could be needed according to your local arrangement.
 
 ### Genetics
 TODO
