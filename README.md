@@ -73,7 +73,7 @@ setwd(".")                          #set working directory
 SKAT results are saved in 'SKAT_results.txt' in the working directory.
 The genetic preprocessing results, used as input for PLS, will be stored in matrix format within the 'genetics_output.raw' file (space-separated ). Rows correspond to subjects, columns to genes, with each cell containing the respective gene mutation score.
 
-
+For more information, please refer to the SKAT reference manual and vignettes [[link]]([https://www.cog-genomics.org/plink/](https://cran.r-project.org/web/packages/SKAT/index.html)).
 ## PLS modeling
 TODO
 
