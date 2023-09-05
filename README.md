@@ -59,13 +59,15 @@ Plink binary format files must be used as inputs. Specifically, these files are 
 * Your own SetId file that contains information of SNP sets.  The SetID file is a white-space (space or tab) delimitered file with 2 columns: SetID and SNP_ID. (Ex. 'Example1.SetID)
 Please keep in mind that there should be no header! The SNP_IDs and SetIDs should be less than 50 characters, otherwise, it will return an error message.
 
-Example files can be found on `preprocessing/genetics/.
+Example files can be found on `preprocessing/genetics/`.
 
-Before running the code, please customize these lines in the genetics_pipeline.R file according to your configuration:
+Before running the code, please customize these lines in the `genetics_pipeline.R` file according to your configuration:
 ```R
 file_name="Example1"                #plink input file name without extension.
 only_significant = TRUE             #gene variant score computed only for significant genes
 threshold = 0.05                    #p-values threshold
+remove_temporary = TRUE             #remove temporary file (located on 'tmp' directory in the main folder)
+setwd(".")                          #set working directory
 ```
 
 
