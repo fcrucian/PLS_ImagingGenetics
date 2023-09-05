@@ -53,8 +53,7 @@ Plink executable must be located in the same folder  as the files in `preprocess
 
 To perform this step, execute the `preprocessing/genetics/genetics_pipeline.R` file. The R SKAT library is automatically installed if it is not already.
 
-For the genome-wide data analysis, plink binary format files must be used.
-Specifically, these files are required:
+Plink binary format files must be used as inputs. Specifically, these files are required:
 * Plink bed, bim and fam files (Ex. 'Example1.bed','Example1.bim','Example1.fam')
 * Plink covariate file (Ex. 'Example1.cov')
 * Your own SetId file that contains information of SNP sets.  The SetID file is a white-space (space or tab) delimitered file with 2 columns: SetID and SNP_ID. (Ex. 'Example1.SetID)
@@ -62,11 +61,11 @@ Please keep in mind that there should be no header! The SNP_IDs and SetIDs shoul
 
 Example files can be found on `preprocessing/genetics/.
 
-Edit these lines in the genetics_pipeline.R file according to your configuration:
+Before running the code, please customize these lines in the genetics_pipeline.R file according to your configuration:
 ```R
 file_name="Example1"                #plink input file name without extension.
-only_significant = TRUE
-threshold = 0.05                
+only_significant = TRUE             #gene variant score computed only for significant genes
+threshold = 0.05                    #p-values threshold
 ```
 
 
