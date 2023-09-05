@@ -40,8 +40,7 @@ TODO
 N.B. Edits to the file names and paths could be needed according to your local file organization.
 
 ### Genetics
-TODO
-
+The [`preprocessing/genetics`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/preprocessing) contains the necessary file to reproduce the genetic data preprocessing from quality control step to gene variant score.
 <p align="center">
 <img src="./images/workflow_gen.png" width="648">
 </p>
