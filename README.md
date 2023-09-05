@@ -66,7 +66,7 @@ Before running the code, please customize these lines in the `genetics_pipeline.
 file_name="Example1"                #plink input file name without extension.
 only_significant = TRUE             #gene variant score computed only for significant genes
 threshold = 0.05                    #p-values threshold
-remove_temporary = TRUE             #remove temporary file (located on 'tmp' directory in the main folder)
+remove_temporary = TRUE             #remove temporary file (located on 'tmp' directory in the working directory)
 setwd(".")                          #set working directory
 ```
 
