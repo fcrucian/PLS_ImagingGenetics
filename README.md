@@ -40,7 +40,7 @@ TODO
 N.B. Edits to the file names and paths could be needed according to your local file organization.
 
 ### Genetics
-The [`preprocessing/genetics`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/preprocessing) contains the necessary file to reproduce the genetic data preprocessing from quality control step to gene variant score.
+The [`preprocessing/genetics`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/preprocessing) contains the necessary file to reproduce the genetic data preprocessing from quality control step to gene variant score. The provided input files serve as a dummy example.
 <p align="center">
 <img src="./images/workflow_gen.png" width="648">
 </p>
@@ -49,7 +49,25 @@ The tools needed for this step are:
 * R version >= 4.0 [[link]](https://www.r-project.org/)
 * Plink version 1.9 [[link]](https://www.cog-genomics.org/plink/)
 
-PLINK executable must be located in the same folder  as the files in `preprocessing/genetics` . A compressed PLINK version is contained in the `preprocessing/genetics` directory for both Windows and Unix versions. Alternatively, you can download it from the official website.
+Plink executable must be located in the same folder  as the files in `preprocessing/genetics` . A compressed Plink version is contained in the `preprocessing/genetics` directory for both Windows and Unix versions. Alternatively, you can download it from the official website.
+
+To perform this step, execute the `preprocessing/genetics/genetics_pipeline.R` file. The R SKAT library is automatically installed if it is not already.
+
+For the genome-wide data analysis, plink binary format files must be used.
+Specifically, these files are required:
+* Plink bed, bim and fam files (Ex. 'Example1.bed','Example1.bim','Example1.fam')
+* Plink covariate file (Ex. 'Example1.cov')
+* your own setid file that contains information of SNP sets are needed. (Ex. 'Example1.SetID)
+Example files can be found on `preprocessing/genetics/.
+
+Edit these lines in the genetics_pipeline.R file according to your configuration:
+```R
+file_name="Example1"                #plink input file name without extension.
+only_significant = TRUE
+threshold = 0.05                
+```
+
+
 
 ## PLS modeling
 TODO
