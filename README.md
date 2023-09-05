@@ -45,6 +45,12 @@ The [`preprocessing/genetics`](https://github.com/fcrucian/PLS_ImagingGenetics/t
 <img src="./images/workflow_gen.png" width="648">
 </p>
 
+The tools needed for this step are:
+* R version >= 4.0 [[link]](https://www.r-project.org/)
+* Plink version 1.9 [[link]](https://www.cog-genomics.org/plink/)
+
+PLINK executable must be located in the same folder  as the files in `preprocessing/genetics` . A compressed PLINK version is contained in the `preprocessing/genetics` directory for both Windows and Unix versions. Alternatively, you can download it from the official website.
+
 ## PLS modeling
 TODO
 
