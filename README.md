@@ -61,7 +61,7 @@ Please keep in mind that there should be no header! The SNP_IDs and SetIDs shoul
 
 Example files can be found on `preprocessing/genetics/`.
 
-Before running the code, please customize these lines in the `genetics_pipeline.R` file according to your configuration:
+Before running the R code, please customize these lines in the `genetics_pipeline.R` file according to your configuration:
 ```R
 file_name="Example1"                #plink input file name without extension.
 only_significant = TRUE             #gene variant score computed only for significant genes
