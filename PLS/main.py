@@ -1,6 +1,6 @@
 import numpy as np
 import PLS_utils as utils
-import PLS
+import PLS_methods as PLS
 
 # Global variables
 path_out = "./"  #save path
