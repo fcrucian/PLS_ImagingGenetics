@@ -23,7 +23,7 @@ The data analysis and the directory is divided into input data processing and PL
 
 ## Data processing
 ### Imaging
-The [`preprocessing/imaging`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/preprocessing) contains the necessary file to reproduce the ADNI T1-weighted images preprocessing from data cleaning to region-based thickness and volume feature extraction.
+The [`preprocessing/imaging`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/preprocessing) contains the file to reproduce the ADNI T1-weighted images preprocessing from data cleaning to region-based thickness and volume feature extraction.
 
 <p align="center">
 <img src="./images/workflow_T1.png" width="448">
@@ -74,12 +74,47 @@ SKAT results are saved in 'SKAT_results.txt' in the working directory.
 The genetic preprocessing results, used as input for PLS, will be stored in matrix format within the 'genetics_output.raw' file (space-separated ). Rows correspond to subjects, columns to genes, with each cell containing the respective gene mutation score.
 
 For more information, please refer to the SKAT reference manual and vignettes [[link]](https://cran.r-project.org/web/packages/SKAT/index.html).
+
 ## PLS modeling
-TODO
+The [`PLS`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/PLS) contains the file to compute the PLS modeling once input features have been extracted.
 
-## PLS explainability and validation
+<p align="center">
+<img src="./images/workflow_pls.png" width="648">
+</p>
 
-TODO
+The tools needed for this step are:
+* Python
+* Python libraries:
+  * numpy
+  * nibabel
+
+To perform this step run the [PLS/main.py](https://github.com/fcrucian/PLS_ImagingGenetics/blob/main/PLS/main.py) file.
+
+Input requirements: X and Y matrices should be N x F_x and N x F_y respectively where:
+  * N is the number of subjects (the same for both X and Y matrices)
+  * F_x is the number of X features
+  * F_y is the number of Y features
+
+The code generates random X and Y matrices which should be changed according to your input files.
+
+Before running the sample python code please customize these lines in the [PLS/main.py](https://github.com/fcrucian/PLS_ImagingGenetics/blob/main/PLS/main.py) file according to your configuration:
+```python
+path_out = "./"                  # save path
+x_variable = 'Imaging'           # X matrix name
+y_variable = 'Genetics'          # Y matric name
+experiment_name = 'PLS_test'     # experiment name for report naming
+```
+The code will automatically generate a pdf report file including the preprocessing performed on data (standardization and/or deconfounding), the chosen PLS components number, the latent space projection separating samples in classes as well as the PLS scores barplot. Finally the permutation test to assess model significance will be computed.
+
+The PLS weights will be saved in csv files in order to visualize them with the preferred tool (e.g. in our work [brainpainter](https://github.com/razvanmarinescu/brain-coloring) was used for displayng the imaging weights).
+
+The transcriptomic analysis was performed relying Human Protein Atlas (HPA) database [proteinatlas.org](https://www.proteinatlas.org/). 
+
+
+
+
+
+
 
 
 
