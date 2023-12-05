@@ -76,7 +76,7 @@ The genetic preprocessing results, used as input for PLS, will be stored in matr
 For more information, please refer to the SKAT reference manual and vignettes [[link]](https://cran.r-project.org/web/packages/SKAT/index.html).
 
 ## PLS modeling
-The [`PLS`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/PLS) contains the file to compute the PLS modeling once input features have been extracted.
+The [`PLS`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/PLS) contains the files to compute the PLS modeling once input features have been extracted.
 
 <p align="center">
 <img src="./images/workflow_pls.png" width="648">
@@ -108,6 +108,9 @@ The code will automatically generate a pdf report file including the preprocessi
 
 The PLS weights will be saved in csv files in order to visualize them with the preferred tool (e.g. in our work [brainpainter](https://github.com/razvanmarinescu/brain-coloring) was used for displayng the imaging weights).
 
+## Transcriptomic analysis
+
+The file [transcriptomic_analysis.py](https://github.com/fcrucian/PLS_ImagingGenetics/blob/main/PLS/transcriptomic_analysis.py) allows to replicate the transcriptomic ana
 The transcriptomic analysis was performed relying Human Protein Atlas (HPA) database [proteinatlas.org](https://www.proteinatlas.org/). 
 
 
