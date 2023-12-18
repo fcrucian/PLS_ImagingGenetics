@@ -1,5 +1,5 @@
 # PLS_ImagingGenetics
-Public Repository for the paper 'Identifying the joint signature of brain atrophy and gene variant scores in Alzheimer's Disease' to appear in the Journal of Biomedical Informatics
+Public Repository for the paper 'Identifying the joint signature of brain atrophy and gene variant scores in Alzheimer's Disease' published in the Journal of Biomedical Informatics.
 
 <p align="center">
 <img src="./images/Pipeline.png" width="748">
@@ -11,10 +11,19 @@ If you use this work, please cite:
 
 by Federica Cruciani, Antonino Aparo, Lorenza Brusini, Carlo Combi, Silvia F. Storti, Rosalba Giugno, Gloria Menegaz, Ilaria Boscolo Galazzo.
 
-[[paper]](To appear)
+[[paper link]](https://www.sciencedirect.com/science/article/pii/S1532046423002903)
 
-BibTeX citation: [To appear]
+BibTeX citation:
 ```bibtex
+@article{CRUCIANI2023104569,
+title = {Identifying the joint signature of brain atrophy and gene variant scores in Alzheimer’s Disease},
+journal = {Journal of Biomedical Informatics},
+pages = {104569},
+year = {2023},
+issn = {1532-0464},
+doi = {https://doi.org/10.1016/j.jbi.2023.104569},
+url = {https://www.sciencedirect.com/science/article/pii/S1532046423002903}
+}
 ```
 
 # Usage
