@@ -43,9 +43,9 @@ The tools needed for this step are:
 * FreeSurfer version 7.0 [[link]](https://surfer.nmr.mgh.harvard.edu/)
 
 To run the code:
-TODO
-
-
+```python
+python imaging_preprocessing_and_feature_extraction.py
+```
 N.B. Edits to the file names and paths could be needed according to your local file organization.
 
 ### Genetics
@@ -92,10 +92,9 @@ The [`PLS`](https://github.com/fcrucian/PLS_ImagingGenetics/tree/main/PLS) conta
 </p>
 
 The tools needed for this step are:
-* Python
+* Python (version > 3)
 * Python libraries:
-  * numpy
-  * nibabel
+  * numpy, scipy, matplotlib, seaborn, scikit-learn, pandas, statannot, datetime
 
 To perform this step run the [PLS/main.py](https://github.com/fcrucian/PLS_ImagingGenetics/blob/main/PLS/main.py) file.
 
